@@ -40,6 +40,12 @@ config LORA_SX126X
 	help
 	  Enable LoRa driver for Semtech SX1261 and SX1262.
 
+config LORA_LR1110
+	bool "Semtech LR1110 driver"
+	select HAS_SEMTECH_LR1110
+	help
+	  Enable LoRa driver for Semtech LR1110.
+
 endchoice
 
 endif
